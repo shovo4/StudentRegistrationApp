@@ -20,25 +20,22 @@ export class CrudComponent {
     this.getAllStudent();
   }
 
-  saveRecords()
-  {
-  
+  saveRecords() {
     let bodyData = {
-      "name" : this.name,
-      "address" : this.address,
-      "fee" : this.fee
+      "name": this.name,
+      "address": this.address,
+      "fee": this.fee
     };
-    this.http.post("http://127.0.0.1:8000/student",bodyData).subscribe((resultData: any)=>
-    {
-        console.log(resultData);
-        alert("Student Registered Successfully");
-        this.getAllStudent();
+    this.http.post("http://127.0.0.1:8000/students/", bodyData).subscribe((resultData: any) => {
+      console.log(resultData);
+      alert("Student Registered Successfully");
+      this.getAllStudent();
     });
   }
 
   getAllStudent()
   {
-    this.http.get("http://127.0.0.1:8000/student")
+    this.http.get("http://127.0.0.1:8000/students")
     .subscribe((resultData: any)=>
     {
         console.log(resultData);
@@ -66,7 +63,7 @@ export class CrudComponent {
       "fee" : this.fee
     };
     
-    this.http.put("http://127.0.0.1:8000/student/"+ this.currentStudentID , bodyData).subscribe((resultData: any)=>
+    this.http.put("http://127.0.0.1:8000/students/"+ this.currentStudentID , bodyData).subscribe((resultData: any)=>
     {
         console.log(resultData);
         alert("Student Registered Updateddd")
@@ -79,7 +76,7 @@ export class CrudComponent {
 
   setDelete(data: any)
   {
-    this.http.delete("http://127.0.0.1:8000/student"+ "/"+ data.id).subscribe((resultData: any)=>
+    this.http.delete("http://127.0.0.1:8000/students"+ "/"+ data.id).subscribe((resultData: any)=>
     {
         console.log(resultData);
         alert("Student Deletedddd")
