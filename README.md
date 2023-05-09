@@ -7,6 +7,10 @@ This marvel of modern technology allows you to effortlessly add and store vital 
 
 With its sleek and user-friendly interface, this app is an ideal solution for academic institutions seeking a streamlined way to manage their student registration process. So why wait? Take advantage of this remarkable tool today and elevate your student registration experience to new heights!
 
+## Contributors
+- Saiful Islam Shovo
+- Iris Du
+
 ## Setup
 
 ### Backend Setup
