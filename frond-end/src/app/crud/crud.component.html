@@ -1,5 +1,5 @@
 <div class="container mt-4">
-    <h1>STUDENT Registation</h1>
+    <h1 class="text-center">Student Registration</h1>
     <div class="card">
         <form>
             <div class="form-group">
@@ -17,15 +17,17 @@
                 <input type="text" [(ngModel)]="fee" [ngModelOptions]="{standalone: true}" class="form-control" id="fee" name="fee" placeholder="Enter Fee">
             </div>
 
-            <button type="submit" class="btn btn-primary mt-4" (click)="saveRecords()">Save</button>
-            <button type="submit" class="btn btn-warning mt-4" (click)="UpdateRecords()">Update</button>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary mt-4" (click)="saveRecords()">Save</button>
+                <button type="submit" class="btn btn-warning mt-4" (click)="UpdateRecords()">Update</button>
+            </div>
         </form>
     </div>
 </div>
 
 <div>
     <div class="container mt-4">
-        <h1>Student Table</h1>
+        <h1 class="text-center">Student Information</h1>
         <table class="table">
             <thead>
                 <tr>
