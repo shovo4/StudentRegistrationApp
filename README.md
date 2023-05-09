@@ -24,7 +24,7 @@ With its sleek and user-friendly interface, this app is an ideal solution for ac
 
 ### Frontend Setup
 - npm install -g @angular/cli  
-  - (if this doesnt work then follow the next step)
+  - (if this doesnt work then follow the next 2 steps otherwise skip those 2 steps)
 - deactivate 
 - sudo npm install -g @angular/cli  
 - cd frond-end 
