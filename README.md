@@ -30,3 +30,7 @@ With its sleek and user-friendly interface, this app is an ideal solution for ac
 - cd frond-end 
 - ng serve  
 - go to http://localhost:4200/
+
+## Screenshots
+<img width="1459" alt="Screen Shot 2023-05-09 at 12 36 24 AM" src="https://user-images.githubusercontent.com/77365934/237013917-6f7495a9-6566-4bee-9b1c-92128a89062e.png">
+
